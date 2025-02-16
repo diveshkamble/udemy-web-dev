@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>The Basic Language of the Web: HTML</title>
+    <!-- <style>
+      h1 {
+        font-family: "Arial Narrow";
+        color: blue;
+        font-size: xx-large;
+      } -->
+    </style>
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <!-- <h2>📘 The Code Magazine</h2>
     <h3>📘 The Code Magazine</h3>
@@ -20,12 +28,13 @@
         <a href="#">Flexbox</a>
         <a href="#">CSS Grid</a>
       </nav>
+      <p>This is a test</p>
     </header>
     <article>
       <header>
-        <h2>The Basic Language of the Web: HTML</h2>
+        <h2 >The Basic Language of the Web: HTML</h2>
         <img src="img/laura-jones.jpg" alt="Laura Jones" width="50px" />
-        <p>
+        <p id="author">
           Posted by <strong>Laura Jones</strong> on Monday, June 21<sup>st</sup>
           2027
         </p>
@@ -90,27 +99,27 @@
     </article>
     <aside>
       <h4>Related posts</h4>
-      <ul>
+      <ul class="related">
         <li>
           <img src="img/related-1.jpg" alt="" width="75" /><a href="#">
             How to Learn Web Development</a
           >
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
         </li>
         <li>
           <img src="img/related-2.jpg" alt="" width="75" /><a href="#">
             The Unknown Powers of CSS</a
           >
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img src="img/related-3.jpg" alt="" width="75" /><a href="#">
             Why JavaScript is awesome</a
           >
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
-    <footer>Copyright © 2027 by The Code Magazine.</footer>
+    <footer><p id = "copyright" class="copyright">Copyright © 2027 by The Code Magazine.</p></footer>
   </body>
 </html>
