@@ -1,11 +1,38 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
   font-family: sans-serif;
   color: #444;
+}
+
+.main-header {
+  background-color: #dadada;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #dadada;
+  border-top: 4px solid #1098ad;
+  border-bottom: 4px solid #1098ad;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
+  padding: 50px 0px;
+  width: 500px;
+}
+
+.nav {
+  font-size: 18px;
 }
 
 h1,
@@ -22,10 +49,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -34,12 +64,25 @@ h4 {
   text-align: center;
 }
 
-P {
+p {
   font-size: 22px;
   line-height: 1.5;
+  margin-bottom: 15px;
 }
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
 li {
   font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 /* descendent selector */
@@ -67,15 +110,6 @@ li {
 
 .related {
   list-style: none;
-}
-.main-header {
-  background-color: #dadada;
-}
-
-aside {
-  background-color: #dadada;
-  border-top: 4px solid #1098ad;
-  border-bottom: 4px solid #1098ad;
 }
 
 li:first-child {
@@ -115,3 +149,18 @@ a:active {
   background-color: brown;
   font-size: 88px;
 }
+/*Resolving conflict*/
+/* #copyright {
+  color: red;
+} 
+
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+} */
