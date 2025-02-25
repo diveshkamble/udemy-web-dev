@@ -7,6 +7,13 @@ body {
   color: #444;
 }
 
+.container {
+  width: 800px;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #dadada;
   /* padding: 20px;
@@ -149,6 +156,11 @@ a:active {
   background-color: brown;
   font-size: 88px;
 }
+
+.post-img {
+  width: 100%;
+  height: auto; /*auto only required if height is specified in html*/
+}
 /*Resolving conflict*/
 /* #copyright {
   color: red;
@@ -164,3 +176,8 @@ a:active {
 footer p {
   color: green;
 } */
+
+nav a:link {
+  background-color: orangered;
+  margin: 20px;
+}
