@@ -14,10 +14,12 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1200;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
+  margin-left: 40px;
+  margin: 40px;
 }
 
 .main-header {
@@ -119,6 +121,16 @@ li:last-child {
   font-size: 18px;
 }
 
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+.author {
+  /* padding-left: 10px; */
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
 #copyright {
   font-size: 16px;
 }
@@ -265,3 +277,35 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block; /* Pseudo element after,before only works with block elements */
+}
+
+article {
+  /* background-color: green; */
+  width: 825px;
+  float: left;
+}
+aside {
+  /* background-color: red; */
+  width: 300px;
+  float: right;
+}
+footer {
+  /* background-color: yellow; */
+  clear: both;
+}
